@@ -3,6 +3,7 @@
 #include "Player.h"
 #include "globals.h"
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 City::City(int nRows, int nCols)
