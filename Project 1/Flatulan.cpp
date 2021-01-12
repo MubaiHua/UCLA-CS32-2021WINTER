@@ -2,6 +2,7 @@
 #include "globals.h"
 #include "City.h"
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 Flatulan::Flatulan(City* cp, int r, int c)
