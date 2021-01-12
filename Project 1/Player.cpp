@@ -2,6 +2,7 @@
 #include "City.h"
 #include "globals.h"
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 Player::Player(City* cp, int r, int c)
