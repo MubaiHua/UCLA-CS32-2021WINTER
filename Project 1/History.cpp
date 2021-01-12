@@ -1,6 +1,7 @@
 #include "History.h"
 #include "globals.h"
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 History::History(int nRows, int nCols) 
