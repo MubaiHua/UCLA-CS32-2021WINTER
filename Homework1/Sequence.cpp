@@ -153,22 +153,16 @@ int Sequence::find(const ItemType& value) const
 // Exchange the contents of this sequence with the other one.
 void Sequence::swap(Sequence& other) 
 {
-	ItemType tempArr[DEFAULT_MAX_ITEMS];
-	int tempSize = size();
-	for (int i = 0; i < size(); i++) 
+	for (int i = 0; i < DEFAULT_MAX_ITEMS; i++) 
 	{
-		tempArr[i] = m_arr[i];
+		ItemType temp = other.m_arr[i];
+		other.m_arr[i] = m_arr[i];
+		m_arr[i] = temp;
 	}
-	m_size = other.size();
-	for (int j = 0; j < size(); j++) 
-	{
-		m_arr[j] = other.m_arr[j];
-	}
-	other.m_size = tempSize;
-	for (int k = 0; k < tempSize; k++) 
-	{
-		other.m_arr[k] = tempArr[k];
-	}
+	
+	int temp = other.m_size;
+	other.m_size = m_size;
+	m_size = temp;
 }
 
 void Sequence::dump() const 
