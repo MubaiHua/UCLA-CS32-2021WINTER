@@ -121,7 +121,7 @@ bool Sequence::erase(int pos)
 		return false;
 	for (int i = pos; i < size() - 1; i++)
 	{
-		m_arr[pos] = m_arr[pos + 1];
+		m_arr[i] = m_arr[i + 1];
 	}
 	m_size--;
 	return true;
