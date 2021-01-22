@@ -2,7 +2,7 @@
 My score for each project and homework:
 | Project | Score |
 |:-------:|:-----:|
-| Proj1 | /100 |
+| Proj1 | 100/100 |
 | Proj2 | /100 |
 | Proj3 | /100 |
 | Proj4 | /100 |
